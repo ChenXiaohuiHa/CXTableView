@@ -10,6 +10,17 @@
 
 @interface ViewController : UIViewController
 
-
+/*
+ 自定义 cell
+ 朋友圈,展开/收起,
+ 向下展开操作
+ 多级展开
+ 图文混排
+ 
+ cell 动画
+ 
+ 移动 cell
+ 删除/增加 cell
+ */
 @end
 
