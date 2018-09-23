@@ -30,9 +30,7 @@
 - (NSArray *)getData {
     
     return  @[
-              @{@"title":@"增删移 cell",@"vcName":@"CXBaseCellOperationViewController"},
-              @{@"title":@"自适应高度",@"vcName":@"CXCellHeightViewController"},
-              @{@"title":@"多级联动",@"vcName":@"CXAnimationCellViewController"}
+              @{@"title":@"自适应高度",@"vcName":@"CXCellHeightViewController"}
               ];
 }
 - (void)loadTableView {

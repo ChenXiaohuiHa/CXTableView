@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C019016221562FC900F47F09 /* CXTableViewAnimationsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C019016121562FC900F47F09 /* CXTableViewAnimationsKit.m */; };
 		C0190168215630B900F47F09 /* CXShowAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0190167215630B900F47F09 /* CXShowAnimationViewController.m */; };
-		C0679F2F21573FEE00C2DE7B /* CXBaseCellOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F2E21573FEE00C2DE7B /* CXBaseCellOperationViewController.m */; };
 		C0679F35215781EB00C2DE7B /* CXCellHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F34215781EB00C2DE7B /* CXCellHeightViewController.m */; };
 		C0679F3921578F7500C2DE7B /* CXCellHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F3821578F7500C2DE7B /* CXCellHeightModel.m */; };
 		C0679F432157959600C2DE7B /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F3E2157959600C2DE7B /* UIView+SDAutoLayout.m */; };
@@ -30,8 +29,6 @@
 		C019016121562FC900F47F09 /* CXTableViewAnimationsKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXTableViewAnimationsKit.m; sourceTree = "<group>"; };
 		C0190166215630B900F47F09 /* CXShowAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXShowAnimationViewController.h; sourceTree = "<group>"; };
 		C0190167215630B900F47F09 /* CXShowAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXShowAnimationViewController.m; sourceTree = "<group>"; };
-		C0679F2D21573FEE00C2DE7B /* CXBaseCellOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXBaseCellOperationViewController.h; sourceTree = "<group>"; };
-		C0679F2E21573FEE00C2DE7B /* CXBaseCellOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXBaseCellOperationViewController.m; sourceTree = "<group>"; };
 		C0679F33215781EB00C2DE7B /* CXCellHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCellHeightViewController.h; sourceTree = "<group>"; };
 		C0679F34215781EB00C2DE7B /* CXCellHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCellHeightViewController.m; sourceTree = "<group>"; };
 		C0679F3721578F7500C2DE7B /* CXCellHeightModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCellHeightModel.h; sourceTree = "<group>"; };
@@ -75,8 +72,6 @@
 			children = (
 				C0A3BF6D2155219400C4C6AF /* CXBaseCellViewController.h */,
 				C0A3BF6E2155219400C4C6AF /* CXBaseCellViewController.m */,
-				C0679F2D21573FEE00C2DE7B /* CXBaseCellOperationViewController.h */,
-				C0679F2E21573FEE00C2DE7B /* CXBaseCellOperationViewController.m */,
 				C0679F482157BAC500C2DE7B /* AdaptHeightCell */,
 			);
 			path = BaseUsing;
@@ -233,7 +228,6 @@
 				C0A3BF6F2155219400C4C6AF /* CXBaseCellViewController.m in Sources */,
 				C0679F35215781EB00C2DE7B /* CXCellHeightViewController.m in Sources */,
 				C0A3BF59215513A700C4C6AF /* AppDelegate.m in Sources */,
-				C0679F2F21573FEE00C2DE7B /* CXBaseCellOperationViewController.m in Sources */,
 				C0190168215630B900F47F09 /* CXShowAnimationViewController.m in Sources */,
 				C019016221562FC900F47F09 /* CXTableViewAnimationsKit.m in Sources */,
 				C0679F472157B6E300C2DE7B /* CXCustomHeightCell.m in Sources */,
