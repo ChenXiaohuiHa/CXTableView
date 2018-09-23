@@ -8,9 +8,11 @@
 
 #import "CXBaseCellViewController.h"
 
-/**r、g、b为整数，alpha为0-1之间的数 */
-#define RGB_Alpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
 @interface CXBaseCellViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+/** 数据 */
+@property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
@@ -21,7 +23,17 @@
     
     self.navigationItem.title = @"基本使用";
     self.view.backgroundColor = [UIColor whiteColor];
+    _dataArray = [self getData];
     [self loadTableView];
+}
+#pragma mark ---------- 数据源 ----------
+- (NSArray *)getData {
+    
+    return  @[
+              @{@"title":@"增删移 cell",@"vcName":@"CXBaseCellOperationViewController"},
+              @{@"title":@"自适应高度",@"vcName":@"CXCellHeightViewController"},
+              @{@"title":@"多级联动",@"vcName":@"CXAnimationCellViewController"}
+              ];
 }
 - (void)loadTableView {
     
@@ -35,7 +47,7 @@
 #pragma mark ---------- UITableViewDelegate,UITableViewDataSource ----------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 20;
+    return _dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -45,11 +57,22 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cell_idntify];
     }
     
-    cell.backgroundColor = indexPath.row %2 == 0 ? [UIColor whiteColor]:RGB_Alpha(248, 248, 248, 1);
+    cell.backgroundColor = indexPath.row %2 == 0 ? [UIColor whiteColor]:[UIColor colorWithRed:(248)/255.0 green:(248)/255.0 blue:(248)/255.0 alpha:1];
     
+    cell.textLabel.text = _dataArray[indexPath.row][@"title"];
+    cell.detailTextLabel.text = _dataArray[indexPath.row][@"vcName"];
     return cell;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSDictionary *dic = self.dataArray[indexPath.row];
+    NSString *VCName = [dic objectForKey:@"vcName"];
+    Class class = NSClassFromString(VCName);
+    UITabBarController *viewController = [[class alloc]init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 
 
 @end

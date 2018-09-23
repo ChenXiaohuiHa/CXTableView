@@ -9,8 +9,7 @@
 #import "CXAnimationCellViewController.h"
 #import "CXShowAnimationViewController.h"
 
-/**r、g、b为整数，alpha为0-1之间的数 */
-#define RGB_Alpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
 @interface CXAnimationCellViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 /** 数据源 */
@@ -59,7 +58,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cell_idntify];
     }
     
-    cell.backgroundColor = indexPath.row %2 == 0 ? [UIColor whiteColor]:RGB_Alpha(248, 248, 248, 1);
+    cell.backgroundColor = indexPath.row %2 == 0 ? [UIColor whiteColor]:[UIColor colorWithRed:(248)/255.0 green:(248)/255.0 blue:(248)/255.0 alpha:1];
     
     cell.textLabel.text = _dataArray[indexPath.row];
     return cell;

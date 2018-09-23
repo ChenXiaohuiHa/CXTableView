@@ -7,9 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CXBaseCellViewController.h"
-#import "CXAnimationCellViewController.h"
-#import "CXCustomCellViewController.h"
 
 /**r、g、b为整数，alpha为0-1之间的数 */
 #define RGB_Alpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
@@ -34,7 +31,6 @@
     if (!_dataArray) {
         _dataArray = @[
                        @{@"title":@"基本使用",@"vcName":@"CXBaseCellViewController"},
-                       @{@"title":@"自定义~cell",@"vcName":@"CXCustomCellViewController"},
                        @{@"title":@"cell~动画",@"vcName":@"CXAnimationCellViewController"}
                        ].copy;
     }

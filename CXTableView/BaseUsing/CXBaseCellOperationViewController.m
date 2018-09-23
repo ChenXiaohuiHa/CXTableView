@@ -1,28 +1,42 @@
 //
-//  CXCustomCellViewController.m
+//  CXBaseCellOperationViewController.m
 //  CXTableView
 //
-//  Created by 陈晓辉 on 2018/9/21.
+//  Created by 陈晓辉 on 2018/9/23.
 //  Copyright © 2018年 陈晓辉. All rights reserved.
 //
 
-#import "CXCustomCellViewController.h"
+#import "CXBaseCellOperationViewController.h"
 
-/**r、g、b为整数，alpha为0-1之间的数 */
-#define RGB_Alpha(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-@interface CXCustomCellViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface CXBaseCellOperationViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+/** tableView */
+@property (nonatomic, strong) UITableView *tableView;
+/** 数据 */
+@property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation CXCustomCellViewController
+@implementation CXBaseCellOperationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"自定义~cell";
+    self.navigationItem.title = @"增删移";
     self.view.backgroundColor = [UIColor whiteColor];
+    _dataArray = [self getData];
     [self loadTableView];
 }
+#pragma mark ---------- 数据源 ----------
+- (NSArray *)getData {
+
+    return @[
+             @{@"title":@"移动/增加/删除 cell",@"vcName":@"CXBaseCellOperationViewController"},
+             @{@"title":@"自适应高度",@"vcName":@"CXCustomCellViewController"},
+             @{@"title":@"联动",@"vcName":@"CXAnimationCellViewController"}
+             ];
+}
+
 - (void)loadTableView {
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
@@ -31,11 +45,12 @@
     tableView.rowHeight = 60.0f;
     tableView.tableFooterView = [UIView new];
     [self.view addSubview:tableView];
+    self.tableView = tableView;
 }
 #pragma mark ---------- UITableViewDelegate,UITableViewDataSource ----------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 20;
+    return _dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -45,8 +60,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cell_idntify];
     }
     
-    cell.backgroundColor = indexPath.row %2 == 0 ? [UIColor whiteColor]:RGB_Alpha(248, 248, 248, 1);
-    
+    cell.textLabel.text = _dataArray[indexPath.row][@"title"];
+    cell.detailTextLabel.text = _dataArray[indexPath.row][@"vcName"];
     return cell;
 }
+
 @end
