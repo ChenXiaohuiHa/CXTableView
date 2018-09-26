@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"cell动态高度";
+    self.navigationItem.title = @"自适应高度";
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataArray = [self creatModelsWithCount:20];
     [self loadTableView];

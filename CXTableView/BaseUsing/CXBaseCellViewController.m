@@ -30,7 +30,8 @@
 - (NSArray *)getData {
     
     return  @[
-              @{@"title":@"自适应高度",@"vcName":@"CXCellHeightViewController"}
+              @{@"title":@"自适应高度",@"vcName":@"CXCellHeightViewController"},
+              @{@"title":@"下拉菜单",@"vcName":@"CXMenuCellViewController"}
               ];
 }
 - (void)loadTableView {

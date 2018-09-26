@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		C019016221562FC900F47F09 /* CXTableViewAnimationsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C019016121562FC900F47F09 /* CXTableViewAnimationsKit.m */; };
 		C0190168215630B900F47F09 /* CXShowAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0190167215630B900F47F09 /* CXShowAnimationViewController.m */; };
+		C01D2D96215B6AA800557FE0 /* CXMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C01D2D95215B6AA800557FE0 /* CXMenuButton.m */; };
 		C0679F35215781EB00C2DE7B /* CXCellHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F34215781EB00C2DE7B /* CXCellHeightViewController.m */; };
 		C0679F3921578F7500C2DE7B /* CXCellHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F3821578F7500C2DE7B /* CXCellHeightModel.m */; };
 		C0679F432157959600C2DE7B /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F3E2157959600C2DE7B /* UIView+SDAutoLayout.m */; };
 		C0679F442157959600C2DE7B /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F412157959600C2DE7B /* UITableView+SDAutoTableViewCellHeight.m */; };
 		C0679F472157B6E300C2DE7B /* CXCustomHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0679F452157B6E300C2DE7B /* CXCustomHeightCell.m */; };
+		C06C61FE215A2C83006AAD91 /* CXMenuCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C61FD215A2C83006AAD91 /* CXMenuCellViewController.m */; };
+		C06C6205215A2F76006AAD91 /* CXMenuItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C6204215A2F76006AAD91 /* CXMenuItemModel.m */; };
+		C06C6208215A2F95006AAD91 /* CXMenuCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C6207215A2F95006AAD91 /* CXMenuCellModel.m */; };
+		C06C620C215A3910006AAD91 /* CXMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C06C620B215A3910006AAD91 /* CXMenuCell.m */; };
 		C0A3BF59215513A700C4C6AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A3BF58215513A700C4C6AF /* AppDelegate.m */; };
 		C0A3BF5C215513A700C4C6AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A3BF5B215513A700C4C6AF /* ViewController.m */; };
 		C0A3BF5F215513A700C4C6AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A3BF5D215513A700C4C6AF /* Main.storyboard */; };
@@ -29,6 +34,8 @@
 		C019016121562FC900F47F09 /* CXTableViewAnimationsKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXTableViewAnimationsKit.m; sourceTree = "<group>"; };
 		C0190166215630B900F47F09 /* CXShowAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXShowAnimationViewController.h; sourceTree = "<group>"; };
 		C0190167215630B900F47F09 /* CXShowAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXShowAnimationViewController.m; sourceTree = "<group>"; };
+		C01D2D94215B6AA800557FE0 /* CXMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXMenuButton.h; sourceTree = "<group>"; };
+		C01D2D95215B6AA800557FE0 /* CXMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXMenuButton.m; sourceTree = "<group>"; };
 		C0679F33215781EB00C2DE7B /* CXCellHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCellHeightViewController.h; sourceTree = "<group>"; };
 		C0679F34215781EB00C2DE7B /* CXCellHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCellHeightViewController.m; sourceTree = "<group>"; };
 		C0679F3721578F7500C2DE7B /* CXCellHeightModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCellHeightModel.h; sourceTree = "<group>"; };
@@ -40,6 +47,14 @@
 		C0679F422157959600C2DE7B /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		C0679F452157B6E300C2DE7B /* CXCustomHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCustomHeightCell.m; sourceTree = "<group>"; };
 		C0679F462157B6E300C2DE7B /* CXCustomHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCustomHeightCell.h; sourceTree = "<group>"; };
+		C06C61FC215A2C83006AAD91 /* CXMenuCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXMenuCellViewController.h; sourceTree = "<group>"; };
+		C06C61FD215A2C83006AAD91 /* CXMenuCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXMenuCellViewController.m; sourceTree = "<group>"; };
+		C06C6203215A2F76006AAD91 /* CXMenuItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXMenuItemModel.h; sourceTree = "<group>"; };
+		C06C6204215A2F76006AAD91 /* CXMenuItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXMenuItemModel.m; sourceTree = "<group>"; };
+		C06C6206215A2F95006AAD91 /* CXMenuCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXMenuCellModel.h; sourceTree = "<group>"; };
+		C06C6207215A2F95006AAD91 /* CXMenuCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXMenuCellModel.m; sourceTree = "<group>"; };
+		C06C620A215A3910006AAD91 /* CXMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXMenuCell.h; sourceTree = "<group>"; };
+		C06C620B215A3910006AAD91 /* CXMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXMenuCell.m; sourceTree = "<group>"; };
 		C0A3BF54215513A700C4C6AF /* CXTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A3BF57215513A700C4C6AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0A3BF58215513A700C4C6AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +87,7 @@
 			children = (
 				C0A3BF6D2155219400C4C6AF /* CXBaseCellViewController.h */,
 				C0A3BF6E2155219400C4C6AF /* CXBaseCellViewController.m */,
+				C06C61FF215A2CC3006AAD91 /* MenuCell */,
 				C0679F482157BAC500C2DE7B /* AdaptHeightCell */,
 			);
 			path = BaseUsing;
@@ -113,6 +129,31 @@
 				C0679F3821578F7500C2DE7B /* CXCellHeightModel.m */,
 			);
 			path = AdaptHeightCell;
+			sourceTree = "<group>";
+		};
+		C06C61FF215A2CC3006AAD91 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				C06C61FC215A2C83006AAD91 /* CXMenuCellViewController.h */,
+				C06C61FD215A2C83006AAD91 /* CXMenuCellViewController.m */,
+				C06C620A215A3910006AAD91 /* CXMenuCell.h */,
+				C06C620B215A3910006AAD91 /* CXMenuCell.m */,
+				C01D2D94215B6AA800557FE0 /* CXMenuButton.h */,
+				C01D2D95215B6AA800557FE0 /* CXMenuButton.m */,
+				C06C6209215A38FA006AAD91 /* M */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		C06C6209215A38FA006AAD91 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				C06C6203215A2F76006AAD91 /* CXMenuItemModel.h */,
+				C06C6204215A2F76006AAD91 /* CXMenuItemModel.m */,
+				C06C6206215A2F95006AAD91 /* CXMenuCellModel.h */,
+				C06C6207215A2F95006AAD91 /* CXMenuCellModel.m */,
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 		C0A3BF4B215513A700C4C6AF = {
@@ -222,13 +263,18 @@
 			files = (
 				C0A3BF5C215513A700C4C6AF /* ViewController.m in Sources */,
 				C0679F3921578F7500C2DE7B /* CXCellHeightModel.m in Sources */,
+				C01D2D96215B6AA800557FE0 /* CXMenuButton.m in Sources */,
 				C0679F442157959600C2DE7B /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				C0679F432157959600C2DE7B /* UIView+SDAutoLayout.m in Sources */,
 				C0A3BF67215513A900C4C6AF /* main.m in Sources */,
 				C0A3BF6F2155219400C4C6AF /* CXBaseCellViewController.m in Sources */,
 				C0679F35215781EB00C2DE7B /* CXCellHeightViewController.m in Sources */,
+				C06C620C215A3910006AAD91 /* CXMenuCell.m in Sources */,
+				C06C6205215A2F76006AAD91 /* CXMenuItemModel.m in Sources */,
 				C0A3BF59215513A700C4C6AF /* AppDelegate.m in Sources */,
+				C06C6208215A2F95006AAD91 /* CXMenuCellModel.m in Sources */,
 				C0190168215630B900F47F09 /* CXShowAnimationViewController.m in Sources */,
+				C06C61FE215A2C83006AAD91 /* CXMenuCellViewController.m in Sources */,
 				C019016221562FC900F47F09 /* CXTableViewAnimationsKit.m in Sources */,
 				C0679F472157B6E300C2DE7B /* CXCustomHeightCell.m in Sources */,
 				C0A3BF72215521A700C4C6AF /* CXAnimationCellViewController.m in Sources */,
