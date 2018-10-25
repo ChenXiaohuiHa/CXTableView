@@ -1,17 +1,17 @@
 //
-//  CXCustomHeightCell.m
+//  CXOneCell.m
 //  CXTableView
 //
-//  Created by 陈晓辉 on 2018/9/23.
+//  Created by 陈晓辉 on 2018/10/25.
 //  Copyright © 2018年 陈晓辉. All rights reserved.
 //
 
-#import "CXCustomHeightCell.h"
+#import "CXOneCell.h"
 #import "SDAutoLayout.h"
 
 const CGFloat contentLabelFontSize = 15;
 CGFloat maxContentLabelHeight = 55; // 根据具体font而定
-@implementation CXCustomHeightCell {
+@implementation CXOneCell {
     UILabel *_contentLabel;//内容
     UIButton *_moreButton;//全文
 }
@@ -53,7 +53,7 @@ CGFloat maxContentLabelHeight = 55; // 根据具体font而定
     // morebutton的高度在setmodel里面设置
     _moreButton.sd_layout.topSpaceToView(_contentLabel, 0).leftEqualToView(_contentLabel).widthIs(60);
 }
-- (void)setModel:(CXCellHeightModel *)model {
+- (void)setModel:(CXOneModel *)model {
     _model = model;
     
     //内容
@@ -88,8 +88,5 @@ CGFloat maxContentLabelHeight = 55; // 根据具体font而定
         self.moreButtonClickedBlock(self.indexPath);
     }
 }
-
-
-
 
 @end

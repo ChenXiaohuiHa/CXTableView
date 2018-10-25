@@ -1,14 +1,14 @@
 //
-//  CXCellHeightViewController.m
+//  CXAdaptHeightOneViewController.m
 //  CXTableView
 //
-//  Created by 陈晓辉 on 2018/9/23.
+//  Created by 陈晓辉 on 2018/10/25.
 //  Copyright © 2018年 陈晓辉. All rights reserved.
 //
 
-#import "CXCellHeightViewController.h"
-#import "CXCellHeightModel.h"
-#import "CXCustomHeightCell.h"
+#import "CXAdaptHeightOneViewController.h"
+#import "CXOneModel.h"
+#import "CXOneCell.h"
 #import "SDAutoLayout.h"
 
 // iPhone X
@@ -22,22 +22,22 @@
 #define CT_TabbarHeight (CT_iPhoneX ? (49.f+34.f) : 49.f)
 // Home Indicator
 #define CT_TabbarSafeBottomMargin (CT_iPhoneX ? 34.f : 0.f)
-
-@interface CXCellHeightViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface CXAdaptHeightOneViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 /** tableView */
 @property (nonatomic, strong) UITableView *tableView;
 /** 数据 */
 @property (nonatomic, strong) NSArray *dataArray;
 
+
 @end
 
-@implementation CXCellHeightViewController
+@implementation CXAdaptHeightOneViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"自适应高度";
+    self.navigationItem.title = @"自适应高度One";
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataArray = [self creatModelsWithCount:20];
     [self loadTableView];
@@ -55,12 +55,12 @@
     NSMutableArray *resArr = [NSMutableArray new];
     
     for (int i = 0; i < count; i++) {
-
+        
         int contentRandomIndex = arc4random_uniform(5);
         
         NSString *msgContent = textArray[contentRandomIndex];
         
-        CXCellHeightModel *model = [CXCellHeightModel new];
+        CXOneModel *model = [CXOneModel new];
         model.msgText = msgContent;
         [resArr addObject:model];
     }
@@ -84,28 +84,28 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // >>>>>>>>>>>>>>>>>>>>> * cell自适应 * >>>>>>>>>>>>>>>>>>>>>>>>
-    CXCellHeightModel *model = _dataArray[indexPath.row];
-    return [self.tableView cellHeightForIndexPath:indexPath model:model keyPath:@"model" cellClass:[CXCustomHeightCell class] contentViewWidth:[self cellContentViewWith]];
+    CXOneModel *model = _dataArray[indexPath.row];
+    return [self.tableView cellHeightForIndexPath:indexPath model:model keyPath:@"model" cellClass:[CXOneCell class] contentViewWidth:[self cellContentViewWith]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cell_idntify = @"cell";
-    CXCustomHeightCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_idntify];
+    CXOneCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_idntify];
     if (!cell) {
-        cell = [[CXCustomHeightCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cell_idntify];
+        cell = [[CXOneCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cell_idntify];
     }
     
     cell.indexPath = indexPath;
-
+    
     //点击 全部, 的回调
     __weak typeof(self) weakSelf = self;
     if (!cell.moreButtonClickedBlock) {
         [cell setMoreButtonClickedBlock:^(NSIndexPath *iPath) {
-
-            CXCellHeightModel *model = weakSelf.dataArray[iPath.row];
+            
+            CXOneModel *model = weakSelf.dataArray[iPath.row];
             model.isOpening = !model.isOpening;
-
+            
             //
             CGRect cellRect = [weakSelf.tableView rectForRowAtIndexPath:iPath];
             if (cellRect.origin.y < weakSelf.tableView.contentOffset.y +CT_Nav_Status_Height) {
@@ -115,10 +115,10 @@
             //            [weakSelf.tableView reloadRowsAtIndexPaths:@[iPath] withRowAnimation:UITableViewRowAnimationFade];
         }];
     }
-
+    
     ////// 此步设置用于实现cell的frame缓存，可以让tableview滑动更加流畅 //////
     [cell useCellFrameCacheWithIndexPath:indexPath tableView:tableView];
-
+    
     //////////////////////////////////////////////////////////////////////
     cell.model = self.dataArray[indexPath.row];
     

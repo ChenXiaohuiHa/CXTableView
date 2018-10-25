@@ -1,17 +1,17 @@
 //
-//  CXCellHeightModel.m
+//  CXOneModel.m
 //  CXTableView
 //
-//  Created by 陈晓辉 on 2018/9/23.
+//  Created by 陈晓辉 on 2018/10/25.
 //  Copyright © 2018年 陈晓辉. All rights reserved.
 //
 
-#import "CXCellHeightModel.h"
+#import "CXOneModel.h"
 #import <UIKit/UIKit.h>
 
 extern const CGFloat contentLabelFontSize;
 extern CGFloat maxContentLabelHeight;
-@implementation CXCellHeightModel {
+@implementation CXOneModel {
     CGFloat _lastContentWidth;
 }
 
@@ -22,7 +22,7 @@ extern CGFloat maxContentLabelHeight;
 @synthesize msgText = _msgText;
 
 - (NSString *)msgText {
- 
+    
     CGFloat contentW = [UIScreen mainScreen].bounds.size.width - 70;
     if (contentW != _lastContentWidth) {
         _lastContentWidth = contentW;
