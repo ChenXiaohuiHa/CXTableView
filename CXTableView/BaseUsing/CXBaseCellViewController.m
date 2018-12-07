@@ -32,7 +32,8 @@
     return  @[
               @{@"title":@"自适应高度One",@"vcName":@"CXAdaptHeightOneViewController"},
               @{@"title":@"自适应高度Two",@"vcName":@"CXAdaptHeightTwoViewController"},
-              @{@"title":@"下拉菜单",@"vcName":@"CXMenuCellViewController"}
+              @{@"title":@"下拉菜单",@"vcName":@"CXMenuCellViewController"},
+              @{@"title":@"银行卡列表",@"vcName":@"CXCardListViewController"}
               ];
 }
 - (void)loadTableView {
