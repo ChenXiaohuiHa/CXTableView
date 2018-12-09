@@ -9,19 +9,29 @@
 
 #import "CXAdaptHeightTwoViewController.h"
 #import "CXTwoCell.h"
-#import "NSArray+Safe.h"
+
 
 @interface CXAdaptHeightTwoViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray *cellHeightArray;
-@property (nonatomic, strong) NSMutableArray *dataArray;
 
+/** 数据数组 */
+@property (nonatomic, strong) NSMutableArray *dataArray;
+/** 缓存 cell 高度 */
+@property (nonatomic, strong) NSMutableDictionary *cacheHeight;
 
 @end
 
 @implementation CXAdaptHeightTwoViewController
 
+/** 缓存 cell 高度 */
+- (NSMutableDictionary *)cacheHeight {
+    if (!_cacheHeight) {
+        _cacheHeight = [NSMutableDictionary dictionary];
+    }
+    return _cacheHeight;
+}
+/** 数据数组 */
 - (NSMutableArray *)dataArray {
     
     if (!_dataArray) {
@@ -30,6 +40,7 @@
     }
     return _dataArray;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -43,6 +54,7 @@
     UITableView *table = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     table.delegate = self;
     table.dataSource = self;
+    table.estimatedRowHeight = 100;
     [self.view addSubview:table];
     self.tableView = table;
 }
@@ -65,7 +77,7 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSNumber *cellHeight = [self.cellHeightArray hw_safeObjectAtIndex:indexPath.row];
+    NSNumber *cellHeight =  [self.cacheHeight objectForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
     if (cellHeight) {
         
         NSLog(@"不用计算，直接返回行高了");
@@ -75,8 +87,9 @@
         CXTwoModel *model = self.dataArray[indexPath.row];
         NSString *content = model.msgContent;
         CGFloat cellH = [CXTwoCell tableView:tableView rowHeightContent:content];
-        CGFloat iconH = 70.f;
-        [self.cellHeightArray addObject:@(cellH +iconH)];
+        CGFloat iconH = 70.f;//icon距上10,icon: 40, icon距下:10,内容距下:10 = 70 固定值
+
+        [self.cacheHeight setObject:@(cellH +iconH) forKey:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
         
         NSLog(@"第一次加载计算一次，每次展示都计算一次");
         return (cellH +iconH);

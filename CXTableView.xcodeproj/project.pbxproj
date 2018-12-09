@@ -43,7 +43,6 @@
 		C0FF63692181AEBA00D322A1 /* CXTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FF63682181AEBA00D322A1 /* CXTwoModel.m */; };
 		C0FF636C2181AECF00D322A1 /* CXTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FF636B2181AECF00D322A1 /* CXTwoCell.m */; };
 		C0FF636F2181AFB800D322A1 /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FF636E2181AFB800D322A1 /* NSString+StringSize.m */; };
-		C0FF63742181B09F00D322A1 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FF63732181B09F00D322A1 /* NSArray+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,8 +122,6 @@
 		C0FF636B2181AECF00D322A1 /* CXTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXTwoCell.m; sourceTree = "<group>"; };
 		C0FF636D2181AFB800D322A1 /* NSString+StringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
 		C0FF636E2181AFB800D322A1 /* NSString+StringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
-		C0FF63722181B09F00D322A1 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
-		C0FF63732181B09F00D322A1 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,8 +324,6 @@
 			children = (
 				C0FF636D2181AFB800D322A1 /* NSString+StringSize.h */,
 				C0FF636E2181AFB800D322A1 /* NSString+StringSize.m */,
-				C0FF63722181B09F00D322A1 /* NSArray+Safe.h */,
-				C0FF63732181B09F00D322A1 /* NSArray+Safe.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -423,7 +418,6 @@
 				C0A3BF67215513A900C4C6AF /* main.m in Sources */,
 				C0FF635F2181AC9200D322A1 /* CXAdaptHeightOneViewController.m in Sources */,
 				C0D0AC5B21BA1BA4007C47C1 /* ViewController+MASAdditions.m in Sources */,
-				C0FF63742181B09F00D322A1 /* NSArray+Safe.m in Sources */,
 				C0D0AC6221BA1BA4007C47C1 /* MASViewConstraint.m in Sources */,
 				C0FF63692181AEBA00D322A1 /* CXTwoModel.m in Sources */,
 				C0D0AC5E21BA1BA4007C47C1 /* MASLayoutConstraint.m in Sources */,
