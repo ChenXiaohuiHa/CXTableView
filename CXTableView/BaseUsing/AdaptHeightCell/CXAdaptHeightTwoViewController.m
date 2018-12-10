@@ -36,7 +36,7 @@
     
     if (!_dataArray) {
         _dataArray = [NSMutableArray array];
-        [_dataArray addObjectsFromArray:[self creatModelsWithCount:10]];
+        //[_dataArray addObjectsFromArray:[self creatModelsWithCount:10]];
     }
     return _dataArray;
 }

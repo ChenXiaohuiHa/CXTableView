@@ -26,6 +26,17 @@
 		C0A3BF72215521A700C4C6AF /* CXAnimationCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A3BF71215521A700C4C6AF /* CXAnimationCellViewController.m */; };
 		C0A49F1F21B9183300E57897 /* CXCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A49F1D21B9183300E57897 /* CXCardListViewController.m */; };
 		C0A49F2421B9188700E57897 /* CXCardListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A49F2321B9188700E57897 /* CXCardListCell.m */; };
+		C0CF258E21BE08F200ED2154 /* TABMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF257E21BE08F200ED2154 /* TABMethod.m */; };
+		C0CF258F21BE08F200ED2154 /* UICollectionViewCell+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF257F21BE08F200ED2154 /* UICollectionViewCell+Animated.m */; };
+		C0CF259021BE08F200ED2154 /* UITableView+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258021BE08F200ED2154 /* UITableView+Animated.m */; };
+		C0CF259121BE08F200ED2154 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258121BE08F200ED2154 /* TABViewAnimated.m */; };
+		C0CF259221BE08F200ED2154 /* UIView+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258321BE08F200ED2154 /* UIView+Animated.m */; };
+		C0CF259321BE08F200ED2154 /* UICollectionView+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258421BE08F200ED2154 /* UICollectionView+Animated.m */; };
+		C0CF259421BE08F200ED2154 /* UIView+TABLayerout.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258721BE08F200ED2154 /* UIView+TABLayerout.m */; };
+		C0CF259521BE08F200ED2154 /* UITableViewCell+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF258C21BE08F200ED2154 /* UITableViewCell+Animated.m */; };
+		C0CF259821BE0B3200ED2154 /* CXLoadAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF259721BE0B3200ED2154 /* CXLoadAnimationViewController.m */; };
+		C0CF259C21BE12C500ED2154 /* CXLoadAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF259B21BE12C500ED2154 /* CXLoadAnimationCell.m */; };
+		C0CF259F21BE432700ED2154 /* CXLoadAnimationMode.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CF259E21BE432700ED2154 /* CXLoadAnimationMode.m */; };
 		C0D0AC5A21BA1BA4007C47C1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D0AC4221BA1BA4007C47C1 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		C0D0AC5B21BA1BA4007C47C1 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D0AC4B21BA1BA4007C47C1 /* ViewController+MASAdditions.m */; };
 		C0D0AC5C21BA1BA4007C47C1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D0AC4F21BA1BA4007C47C1 /* MASCompositeConstraint.m */; };
@@ -83,6 +94,29 @@
 		C0A49F1E21B9183300E57897 /* CXCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCardListViewController.h; sourceTree = "<group>"; };
 		C0A49F2221B9188700E57897 /* CXCardListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCardListCell.h; sourceTree = "<group>"; };
 		C0A49F2321B9188700E57897 /* CXCardListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCardListCell.m; sourceTree = "<group>"; };
+		C0CF257D21BE08F200ED2154 /* UIView+TABLayerout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TABLayerout.h"; sourceTree = "<group>"; };
+		C0CF257E21BE08F200ED2154 /* TABMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABMethod.m; sourceTree = "<group>"; };
+		C0CF257F21BE08F200ED2154 /* UICollectionViewCell+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Animated.m"; sourceTree = "<group>"; };
+		C0CF258021BE08F200ED2154 /* UITableView+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Animated.m"; sourceTree = "<group>"; };
+		C0CF258121BE08F200ED2154 /* TABViewAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABViewAnimated.m; sourceTree = "<group>"; };
+		C0CF258221BE08F200ED2154 /* UITableViewCell+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Animated.h"; sourceTree = "<group>"; };
+		C0CF258321BE08F200ED2154 /* UIView+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animated.m"; sourceTree = "<group>"; };
+		C0CF258421BE08F200ED2154 /* UICollectionView+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Animated.m"; sourceTree = "<group>"; };
+		C0CF258521BE08F200ED2154 /* UICollectionViewCell+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Animated.h"; sourceTree = "<group>"; };
+		C0CF258621BE08F200ED2154 /* TABMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABMethod.h; sourceTree = "<group>"; };
+		C0CF258721BE08F200ED2154 /* UIView+TABLayerout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TABLayerout.m"; sourceTree = "<group>"; };
+		C0CF258821BE08F200ED2154 /* UITableView+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Animated.h"; sourceTree = "<group>"; };
+		C0CF258921BE08F200ED2154 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
+		C0CF258A21BE08F200ED2154 /* UIView+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animated.h"; sourceTree = "<group>"; };
+		C0CF258B21BE08F200ED2154 /* TABViewAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABViewAnimated.h; sourceTree = "<group>"; };
+		C0CF258C21BE08F200ED2154 /* UITableViewCell+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Animated.m"; sourceTree = "<group>"; };
+		C0CF258D21BE08F200ED2154 /* UICollectionView+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Animated.h"; sourceTree = "<group>"; };
+		C0CF259621BE0B3200ED2154 /* CXLoadAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXLoadAnimationViewController.h; sourceTree = "<group>"; };
+		C0CF259721BE0B3200ED2154 /* CXLoadAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXLoadAnimationViewController.m; sourceTree = "<group>"; };
+		C0CF259A21BE12C500ED2154 /* CXLoadAnimationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXLoadAnimationCell.h; sourceTree = "<group>"; };
+		C0CF259B21BE12C500ED2154 /* CXLoadAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXLoadAnimationCell.m; sourceTree = "<group>"; };
+		C0CF259D21BE432700ED2154 /* CXLoadAnimationMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXLoadAnimationMode.h; sourceTree = "<group>"; };
+		C0CF259E21BE432700ED2154 /* CXLoadAnimationMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXLoadAnimationMode.m; sourceTree = "<group>"; };
 		C0D0AC4121BA1BA4007C47C1 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		C0D0AC4221BA1BA4007C47C1 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		C0D0AC4321BA1BA4007C47C1 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -140,6 +174,7 @@
 			children = (
 				C0A3BF6D2155219400C4C6AF /* CXBaseCellViewController.h */,
 				C0A3BF6E2155219400C4C6AF /* CXBaseCellViewController.m */,
+				C0CF259921BE0B4A00ED2154 /* LoadAnimation */,
 				C0A49F2021B9183800E57897 /* CardList */,
 				C06C61FF215A2CC3006AAD91 /* MenuCell */,
 				C0679F482157BAC500C2DE7B /* AdaptHeightCell */,
@@ -230,9 +265,8 @@
 				C019015B21562AD600F47F09 /* Animation */,
 				C0A3BF60215513A900C4C6AF /* Assets.xcassets */,
 				C0FF63752181B0B200D322A1 /* Category */,
-				C0679F3D2157959600C2DE7B /* SDAutoLayout */,
+				C0CF257B21BE08C200ED2154 /* Venders */,
 				C0A3BF62215513A900C4C6AF /* LaunchScreen.storyboard */,
-				C0D0AC4021BA1BA4007C47C1 /* Masonry */,
 				C0A3BF65215513A900C4C6AF /* Info.plist */,
 				C0A3BF66215513A900C4C6AF /* main.m */,
 			);
@@ -259,6 +293,53 @@
 				C01D2D95215B6AA800557FE0 /* CXMenuButton.m */,
 			);
 			name = V;
+			sourceTree = "<group>";
+		};
+		C0CF257B21BE08C200ED2154 /* Venders */ = {
+			isa = PBXGroup;
+			children = (
+				C0CF257C21BE08F200ED2154 /* TABAnimated */,
+				C0679F3D2157959600C2DE7B /* SDAutoLayout */,
+				C0D0AC4021BA1BA4007C47C1 /* Masonry */,
+			);
+			path = Venders;
+			sourceTree = "<group>";
+		};
+		C0CF257C21BE08F200ED2154 /* TABAnimated */ = {
+			isa = PBXGroup;
+			children = (
+				C0CF257D21BE08F200ED2154 /* UIView+TABLayerout.h */,
+				C0CF257E21BE08F200ED2154 /* TABMethod.m */,
+				C0CF257F21BE08F200ED2154 /* UICollectionViewCell+Animated.m */,
+				C0CF258021BE08F200ED2154 /* UITableView+Animated.m */,
+				C0CF258121BE08F200ED2154 /* TABViewAnimated.m */,
+				C0CF258221BE08F200ED2154 /* UITableViewCell+Animated.h */,
+				C0CF258321BE08F200ED2154 /* UIView+Animated.m */,
+				C0CF258421BE08F200ED2154 /* UICollectionView+Animated.m */,
+				C0CF258521BE08F200ED2154 /* UICollectionViewCell+Animated.h */,
+				C0CF258621BE08F200ED2154 /* TABMethod.h */,
+				C0CF258721BE08F200ED2154 /* UIView+TABLayerout.m */,
+				C0CF258821BE08F200ED2154 /* UITableView+Animated.h */,
+				C0CF258921BE08F200ED2154 /* TABAnimated.h */,
+				C0CF258A21BE08F200ED2154 /* UIView+Animated.h */,
+				C0CF258B21BE08F200ED2154 /* TABViewAnimated.h */,
+				C0CF258C21BE08F200ED2154 /* UITableViewCell+Animated.m */,
+				C0CF258D21BE08F200ED2154 /* UICollectionView+Animated.h */,
+			);
+			path = TABAnimated;
+			sourceTree = "<group>";
+		};
+		C0CF259921BE0B4A00ED2154 /* LoadAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C0CF259621BE0B3200ED2154 /* CXLoadAnimationViewController.h */,
+				C0CF259721BE0B3200ED2154 /* CXLoadAnimationViewController.m */,
+				C0CF259A21BE12C500ED2154 /* CXLoadAnimationCell.h */,
+				C0CF259B21BE12C500ED2154 /* CXLoadAnimationCell.m */,
+				C0CF259D21BE432700ED2154 /* CXLoadAnimationMode.h */,
+				C0CF259E21BE432700ED2154 /* CXLoadAnimationMode.m */,
+			);
+			path = LoadAnimation;
 			sourceTree = "<group>";
 		};
 		C0D0AC4021BA1BA4007C47C1 /* Masonry */ = {
@@ -407,22 +488,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CF259F21BE432700ED2154 /* CXLoadAnimationMode.m in Sources */,
 				C0A3BF5C215513A700C4C6AF /* ViewController.m in Sources */,
 				C01D2D96215B6AA800557FE0 /* CXMenuButton.m in Sources */,
 				C0D0AC6021BA1BA4007C47C1 /* View+MASAdditions.m in Sources */,
+				C0CF258F21BE08F200ED2154 /* UICollectionViewCell+Animated.m in Sources */,
 				C0D0AC5F21BA1BA4007C47C1 /* NSArray+MASAdditions.m in Sources */,
 				C0A49F1F21B9183300E57897 /* CXCardListViewController.m in Sources */,
 				C0679F442157959600C2DE7B /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				C0FF63652181ACE900D322A1 /* CXOneModel.m in Sources */,
+				C0CF259521BE08F200ED2154 /* UITableViewCell+Animated.m in Sources */,
+				C0CF259021BE08F200ED2154 /* UITableView+Animated.m in Sources */,
 				C0679F432157959600C2DE7B /* UIView+SDAutoLayout.m in Sources */,
 				C0A3BF67215513A900C4C6AF /* main.m in Sources */,
 				C0FF635F2181AC9200D322A1 /* CXAdaptHeightOneViewController.m in Sources */,
 				C0D0AC5B21BA1BA4007C47C1 /* ViewController+MASAdditions.m in Sources */,
+				C0CF259221BE08F200ED2154 /* UIView+Animated.m in Sources */,
 				C0D0AC6221BA1BA4007C47C1 /* MASViewConstraint.m in Sources */,
 				C0FF63692181AEBA00D322A1 /* CXTwoModel.m in Sources */,
 				C0D0AC5E21BA1BA4007C47C1 /* MASLayoutConstraint.m in Sources */,
 				C0FF635C2181AC0900D322A1 /* CXAdaptHeightTwoViewController.m in Sources */,
 				C0A3BF6F2155219400C4C6AF /* CXBaseCellViewController.m in Sources */,
+				C0CF259321BE08F200ED2154 /* UICollectionView+Animated.m in Sources */,
 				C0D0AC6121BA1BA4007C47C1 /* MASConstraint.m in Sources */,
 				C0A49F2421B9188700E57897 /* CXCardListCell.m in Sources */,
 				C06C620C215A3910006AAD91 /* CXMenuCell.m in Sources */,
@@ -433,13 +520,18 @@
 				C0190168215630B900F47F09 /* CXShowAnimationViewController.m in Sources */,
 				C0D0AC5A21BA1BA4007C47C1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				C06C61FE215A2C83006AAD91 /* CXMenuCellViewController.m in Sources */,
+				C0CF259C21BE12C500ED2154 /* CXLoadAnimationCell.m in Sources */,
+				C0CF258E21BE08F200ED2154 /* TABMethod.m in Sources */,
 				C0D0AC5D21BA1BA4007C47C1 /* MASConstraintMaker.m in Sources */,
 				C019016221562FC900F47F09 /* CXTableViewAnimationsKit.m in Sources */,
 				C0D0AC5C21BA1BA4007C47C1 /* MASCompositeConstraint.m in Sources */,
 				C0A3BF72215521A700C4C6AF /* CXAnimationCellViewController.m in Sources */,
+				C0CF259121BE08F200ED2154 /* TABViewAnimated.m in Sources */,
 				C0FF63622181ACC600D322A1 /* CXOneCell.m in Sources */,
 				C0FF636C2181AECF00D322A1 /* CXTwoCell.m in Sources */,
 				C0FF636F2181AFB800D322A1 /* NSString+StringSize.m in Sources */,
+				C0CF259821BE0B3200ED2154 /* CXLoadAnimationViewController.m in Sources */,
+				C0CF259421BE08F200ED2154 /* UIView+TABLayerout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
